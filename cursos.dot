@@ -1,6 +1,7 @@
 graph cursos{
 	
 	node [shape=none]
+	
     Quinto -- Sexto;
 	Sexto -- Septimo;
 	Septimo -- Octavo;
