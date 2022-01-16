@@ -1,0 +1,129 @@
+graph cursos{
+	
+	node [shape=record];
+	rankdir = LR;
+	/*struct1[label="<f0> left | <f1> middle | <f2> right"];
+	struct2[label="hello&#92;nworld |{ b |{c|<here> d|e}| f}| g | h"];
+
+
+	struc3[label="nombre &#92;n codigo |{ b |{c|<here> d|e}| f}| g | h"];
+
+	curso[label="{b|{x}}"];
+
+	curso2[label="nombre &#92;n codigo"];
+	*/
+
+	Quinto -- Sexto;
+	Sexto -- Septimo;
+	Septimo -- Octavo;
+	Octavo -- Noveno;
+	Noveno -- Decimo;
+
+	
+
+	//QUINTO
+	777[label="Compi 1 &#92;n 777"];
+	772[label="EDD &#92;n 772"];
+	964[label="Orga &#92;n 964"];
+
+	{rank = same Quinto 777 772 964}
+
+	//SEXTO
+	722[label="Teo 1 &#92;n 722"];
+	781[label="Compi 2 &#92;n 781"];
+	778[label="Arqui 1 &#92;n 778"];
+	773[label="Archivos &#92;n 773"];
+
+	{rank = same Sexto 722 781 778 773};
+
+	//SEPTIMO
+	724[label="Teo 2 &#92;n 724"];
+	281[label="Sist. Op. 1 &#92;n 281"];
+	779[label="Arqui 2 &#92;n 779"];
+	970[label="Redes 1 &#92;n 970"];
+	774[label="BD 1 &#92;n 774"];
+	2036[label="Pract. Inter. &#92;n 2036"];
+
+	{rank = same Septimo 724 281 779 970 774 2036};
+
+	//OCTAVO
+	285[label="Sist. Op. 2 &#92;n 285"];
+	975[label="Redes 2 &#92;n 975"];
+	775[label="BD 2 &#92;n 775"];
+	283[label="Analisis y diseño 1 &#92;n 283"];
+	797[label="Seminario 1 &#92;n 797"];
+
+	{rank = same Octavo 285 975 775 283 797};
+
+	//NOVENO
+	729[label="Simulacion 1 &#92;n 729"];
+	786[label="Gerenciales 1 &#92;n 786"];
+	972[label="Int. Art. 1 &#92;n 972"];
+	785[label="Analisis y diseño 2 &#92;n 785"];
+	798[label="Seminario 2 &#92;n 798"];
+	2009[label="Pract. Final &#92;n 2009"];
+
+	{rank = same Noveno 729 786 972 785 798 2009}
+
+	//DECIMO
+	787[label="Gerenciales 2 &#92;n 787"];
+	720[label="Simulacion 2 &#92;n 720"];
+	780[label="Soft. Avanzado &#92;n 780"];
+	799[label="Seminario Invest. &#92;n 799"];
+
+	{rank = same Decimo 787 720 780 799};
+
+
+	//RELACIONES
+	//QUINTO
+	777 -- {781,2036};
+	772 -- {722,781,773};
+	964 -- {778};
+
+	//SEXTO
+	722 -- {724};
+	781 -- {281,972};
+	778 -- {281,779,970,2036};
+	773 -- {970,774,2036};
+
+	//SEPTIMO
+	724 -- {797,729};
+	281 -- {285,775};
+	//779 -- {}; //arqui 2 ya no abre nada
+	970 -- {975};
+	774 -- {775,283};
+	2036 -- {2009};
+
+
+	//OCTAVO
+	//285 -- {}; SOPES 2 YA NO ABRE NADA
+	//975 -- {}; REDES 2 YA NO ABRE NADA
+	775 -- {972};
+	283 -- {786, 785};
+	797 -- {798};
+
+
+	//NOVENO
+	729 -- {720};
+	786 -- {787};
+	//972 -- {}; INTELIGENCIA 1 YA NO ABRE NADA OBLIGATORIO
+	785 -- {780};
+	798 -- {799};
+	//2009 -- {}; FINALES YA NO ABRE NADA
+
+
+	//FIN
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
