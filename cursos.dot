@@ -1,5 +1,12 @@
 graph cursos{
 	
+	node [shape=none]
+    Quinto -- Sexto;
+	Sexto -- Septimo;
+	Septimo -- Octavo;
+	Octavo -- Noveno;
+	Noveno -- Decimo;
+
 	node [shape=record];
 	rankdir = LR;
 	/*struct1[label="<f0> left | <f1> middle | <f2> right"];
@@ -13,14 +20,7 @@ graph cursos{
 	curso2[label="nombre &#92;n codigo"];
 	*/
 
-	Quinto -- Sexto;
-	Sexto -- Septimo;
-	Septimo -- Octavo;
-	Octavo -- Noveno;
-	Noveno -- Decimo;
-
 	
-
 	//QUINTO
 	777[label="Compi 1 &#92;n 777"];
 	772[label="EDD &#92;n 772"];
